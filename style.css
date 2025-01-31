@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    background: linear-gradient(135deg, #fd79a8, #e84393, #a29bfe);
+    background-attachment: fixed; /* Para manter o fundo fixo ao rolar a página */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff; /* Altere a cor do texto para branco, se necessário */
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    color: #e3e3e3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+h1, h2 {
+    margin: 20px;
+}
+
+.carousel-item img {
+    height: 600px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-primary {
+    border-color: #8e44ad;
+    color: #8e44ad;
+}
+
+.btn-outline-primary:hover {
+    background-color: #8e44ad;
+    color: #fff;
+}
+
+/* Estilo para elementos com animação */
+#animacao1 {
+    opacity: 0;
+    transform: translateY(50px); /* Movimenta os elementos um pouco para baixo */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Quando o elemento entra em cena, a classe 'show' é adicionada */
+#animacao1.show {
+    opacity: 1;
+    transform: translateY(0); /* Movimenta o elemento de volta para sua posição original */
+}
